@@ -223,6 +223,6 @@ while(i>2)
 }
 
 // Dialog boxes
-// age = prompt("Enter Your Age : ")
-// confirm("Is entered age correct?")
-// alert("Entered Age Is "+age)
+age = prompt("Enter Your Age : ")
+confirm("Is entered age correct?")
+alert("Entered Age Is "+age)
