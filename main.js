@@ -148,28 +148,26 @@ else
 console.log("\n\tLooping Statements")
 
 console.log("For loop")
-for (var i=0;i<=10;i++)
+for (var i = 0; i <= 10; i++)
     console.log(i)
 
 console.log("While loop")
-var i=0
-while(i<=5)
-{
+var i = 0
+while (i <= 5) {
     console.log(i)
     i++
 }
 
 console.log("Do while loop")
-i=5
-do{
+i = 5
+do {
     console.log(i)
     i++
-}while(i>10);
+} while (i > 10);
 
 console.log("Switch case")
-i=5
-switch(i)
-{
+i = 5
+switch (i) {
     case 0:
         console.log("0")
         break
@@ -184,16 +182,14 @@ switch(i)
 }
 
 // Array
-arr = [1,2,3,4.5,'a','b',"hello",true,null,undefined]
+arr = [1, 2, 3, 4.5, 'a', 'b', "hello", true, null, undefined]
 console.log("Loop through an array using for loop")
-for (i=0;i<arr.length;i++)
-{
+for (i = 0; i < arr.length; i++) {
     console.log(arr[i])
 }
 
 console.log("Loop through an array using for of loop")
-for (i of arr)
-{
+for (i of arr) {
     console.log(i)
 }
 
@@ -201,28 +197,112 @@ for (i of arr)
 console.log("\n\tLoop control")
 
 console.log("Break")
-for(i=1;i<=10;i++)
-{
-    if(i==5)
-    {
+for (i = 1; i <= 10; i++) {
+    if (i == 5) {
         break
     }
     console.log(i)
 }
 
 console.log("Continue")
-i=10
-while(i>2)
-{
+i = 10
+while (i > 2) {
     i--
-    if(i==5)
-    {
+    if (i == 5) {
         continue
     }
     console.log(i)
 }
 
 // Dialog boxes
-age = prompt("Enter Your Age : ")
-confirm("Is entered age correct?")
-alert("Entered Age Is "+age)
+// age = prompt("Enter Your Age : ")
+// confirm("Is entered age correct?")
+// alert("Entered Age Is "+age)
+
+console.log("\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ SESSION - 3 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n")
+
+// Function
+console.log("\n\tFunctions")
+
+// Basic function
+product(10, 50)
+
+function product(num1, num2) {
+    console.log(num1 * num2)
+}
+
+// Function expression
+var fullName = function (firstName, lastName) {
+    console.log(firstName + " " + lastName)
+}
+
+fullName("Jamal", "Uddin")
+
+// Arrow function
+const sum = (a, b) => a + b   // returns a value
+console.log(sum(20, 30))
+
+const greet = () => console.log("Welcome to JavaScript")   // _ or ()
+greet()
+
+const powerOfNum = (num,pow=2) => console.log(num**pow)
+powerOfNum(10,3)
+
+// Array methods
+console.log("\n\tArray Methods")
+
+array = [2,6,7,1,9,2,4,"hello","ball","dog"]
+array.sort()
+console.log(array)
+
+const arr1 = [0,1,2,3,4]
+const arr2 = [5,6,7,8,9,5]
+var numbers = arr1.concat(arr2)
+console.log(numbers)
+
+numbers.push(100)
+console.log(numbers)
+
+numbers.pop()
+console.log(numbers)
+
+numbers.unshift(98,65,21)
+console.log(numbers)
+
+numbers.shift()
+console.log(numbers)
+
+console.log(numbers.includes(1,2))
+
+console.log(numbers.indexOf(20))
+
+console.log(numbers.lastIndexOf(5))
+
+console.log(Array.isArray([1,2,3]))
+
+numbers.reverse()
+console.log(numbers)
+
+var newArray = Array.of(10,20,40,50,70)
+console.log(newArray)
+
+console.log(newArray.slice(0,3))
+console.log(newArray.slice(2))
+
+newArray.splice(2,0,30)
+console.log(newArray)
+
+newArray.splice(-1,3,60,70,80)
+console.log(newArray)
+
+console.log(newArray.toString())
+
+newArray.forEach(elements => console.log(elements*2))
+
+console.log(newArray.every(elements => elements>0))
+
+console.log(newArray.some(elements => elements==50))
+
+const numbersGreaterThanTen = numbers.filter(num => num > 10)
+console.log(numbersGreaterThanTen)
+
